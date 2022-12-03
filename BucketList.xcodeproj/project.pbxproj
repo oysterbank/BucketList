@@ -11,6 +11,11 @@
 		8406CF80293BC1F7006B20B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406CF7F293BC1F7006B20B9 /* ContentView.swift */; };
 		8406CF82293BC1F8006B20B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8406CF81293BC1F8006B20B9 /* Assets.xcassets */; };
 		8406CF85293BC1F8006B20B9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8406CF84293BC1F8006B20B9 /* Preview Assets.xcassets */; };
+		8406CF8D293BD146006B20B9 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406CF8C293BD146006B20B9 /* Location.swift */; };
+		8406CF8F293BD918006B20B9 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406CF8E293BD918006B20B9 /* EditView.swift */; };
+		8406CF91293BDF68006B20B9 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406CF90293BDF68006B20B9 /* Result.swift */; };
+		8406CF93293BEAB6006B20B9 /* ContentView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406CF92293BEAB6006B20B9 /* ContentView-ViewModel.swift */; };
+		8406CF95293BEE1A006B20B9 /* FileManager-DocumentsDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406CF94293BEE1A006B20B9 /* FileManager-DocumentsDirectory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,12 @@
 		8406CF7F293BC1F7006B20B9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8406CF81293BC1F8006B20B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8406CF84293BC1F8006B20B9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8406CF8B293BCCE5006B20B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8406CF8C293BD146006B20B9 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		8406CF8E293BD918006B20B9 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		8406CF90293BDF68006B20B9 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		8406CF92293BEAB6006B20B9 /* ContentView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView-ViewModel.swift"; sourceTree = "<group>"; };
+		8406CF94293BEE1A006B20B9 /* FileManager-DocumentsDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager-DocumentsDirectory.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +62,14 @@
 		8406CF7C293BC1F7006B20B9 /* BucketList */ = {
 			isa = PBXGroup;
 			children = (
+				8406CF8B293BCCE5006B20B9 /* Info.plist */,
 				8406CF7D293BC1F7006B20B9 /* BucketListApp.swift */,
 				8406CF7F293BC1F7006B20B9 /* ContentView.swift */,
+				8406CF94293BEE1A006B20B9 /* FileManager-DocumentsDirectory.swift */,
+				8406CF92293BEAB6006B20B9 /* ContentView-ViewModel.swift */,
+				8406CF90293BDF68006B20B9 /* Result.swift */,
+				8406CF8E293BD918006B20B9 /* EditView.swift */,
+				8406CF8C293BD146006B20B9 /* Location.swift */,
 				8406CF81293BC1F8006B20B9 /* Assets.xcassets */,
 				8406CF83293BC1F8006B20B9 /* Preview Content */,
 			);
@@ -138,6 +155,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8406CF80293BC1F7006B20B9 /* ContentView.swift in Sources */,
+				8406CF95293BEE1A006B20B9 /* FileManager-DocumentsDirectory.swift in Sources */,
+				8406CF93293BEAB6006B20B9 /* ContentView-ViewModel.swift in Sources */,
+				8406CF91293BDF68006B20B9 /* Result.swift in Sources */,
+				8406CF8D293BD146006B20B9 /* Location.swift in Sources */,
+				8406CF8F293BD918006B20B9 /* EditView.swift in Sources */,
 				8406CF7E293BC1F7006B20B9 /* BucketListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +292,8 @@
 				DEVELOPMENT_TEAM = WV8J8M4LWD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BucketList/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please authenticate yourself to unlock your places";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +323,8 @@
 				DEVELOPMENT_TEAM = WV8J8M4LWD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BucketList/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please authenticate yourself to unlock your places";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
